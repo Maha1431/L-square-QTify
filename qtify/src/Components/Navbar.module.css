@@ -1,28 +1,24 @@
 .container{
     display: flex;
     justify-content: space-between;
-    width: 1320px;
+    width: 100vw;
     height: 74px;
+    align-items: center;
     background-color: var(--color-primary);
+    padding: 0 32px;
 }
 .logo{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
     width: 67px;
-    height: 34px;
-    /* top: 20px;
-    left: 32px; */
 }
 .form{
     display: flex;
     align-items: center;
+    height: 48px;
 }
 
 .text{
 width: 502px;
-height: 60%;
+height: 100%;
 border-radius: 8px;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 0px;
@@ -32,7 +28,7 @@ padding: 14px 20px;
 
 
 .icon{
-height: 60%;
+height: 100%;
 cursor: pointer;
 border-radius: 0 8px 8px 0;
 padding:1px solid var(--color-black);
@@ -48,6 +44,4 @@ border-left: none;
     border-radius: 12px;
     padding: 10px 16px;
     cursor: pointer;
-    height: 60%;
-    margin: 15px;
 }
