@@ -1,13 +1,10 @@
-
 import './App.css';
-import Button from './Components/Button'
-import Search from './Components/Search';
+import Navbar from "./Components/Navbar"
 
 function App() {
   return (
     <div>
-      <Search />
-     <Button>Give Feedback</Button>
+      <Navbar />
     </div>
   );
 }
