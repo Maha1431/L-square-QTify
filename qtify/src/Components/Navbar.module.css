@@ -5,27 +5,16 @@
     height: 74px;
     background-color: var(--color-primary);
 }
-.logocontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 10px 0 0;
-}
-
 .logo{
-width: 28px;
-height: 24px;
-margin-bottom: -30px;
-
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 67px;
+    height: 34px;
+    /* top: 20px;
+    left: 32px; */
 }
-
-.logotext{
-    font-size: 1.5rem; 
-    font-weight: bold;
-    margin-top: 4px;
-    margin-left: 40px;
-}
-
 .form{
     display: flex;
     align-items: center;
