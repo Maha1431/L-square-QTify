@@ -12,7 +12,7 @@ function Navbar()
          <img src={logo} alt='Qtify-logo' className={styles.logo} />
          <form className={styles.form}>
          <input type='text' placeholder='Search a song of your choice' className={styles.text} />
-         <button className={styles.icon}><SearchIcon /></button>
+         <button className={styles.icon} type='submit'><SearchIcon /></button>
          </form>
          <button className={styles.button}>Give Feedback</button>
         </div>

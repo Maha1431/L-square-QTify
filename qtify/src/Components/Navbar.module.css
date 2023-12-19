@@ -9,6 +9,7 @@
 }
 .logo{
     width: 67px;
+    padding-left: 10px;
 }
 .form{
     display: flex;
