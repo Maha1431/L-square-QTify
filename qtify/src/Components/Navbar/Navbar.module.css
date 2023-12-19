@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 74px;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 0 32px;
+}
+.logo{
+    width: 67px;
+    padding-left: 15px;
+}
+
+
