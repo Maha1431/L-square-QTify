@@ -1,0 +1,16 @@
+.heroContainer{
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 1440px;
+}
+.heroImg{
+    width: 212px;
+    height: 212px;
+}
+/* .text{
+    width: 556px;
+    height: 100px;
+} */
