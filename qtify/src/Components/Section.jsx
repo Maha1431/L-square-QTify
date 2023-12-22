@@ -6,7 +6,7 @@ import { CircularProgress } from "@mui/material";
 
 function Section({title, data, type})
 {
-  const [carouselButton, setCarouselButton] = useState(true);
+  const [carouselButton, setCarouselButton] = useState(false);
 
  const handleCarousel = () => {
   setCarouselButton((prevState) => !prevState)
