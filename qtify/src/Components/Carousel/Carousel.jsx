@@ -29,7 +29,7 @@ export default function Carousel({data, renderComponent})
      spaceBetween={40}
      allowTouchMove
      >
-        {/* <Controls data={data} /> */}
+        <Controls data={data} />
         <CarouselRightNavigation />
         <CarouselLeftNavigation />
 
