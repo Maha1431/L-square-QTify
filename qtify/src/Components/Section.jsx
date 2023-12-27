@@ -54,7 +54,7 @@ function Section({ title, data, filterSource, type }) {
           {!carouselButton ? (
             <div className={styles.wrapper}>
               {cardstoRender.map((ele) => (
-                <Card key={ele.id} data={ele} type={type} />
+                <Card  data={ele} type={type} />
               ))}
             </div>
           ) : (

@@ -12,7 +12,7 @@ function CarouselLeftNavigation()
     useEffect(() => {
         swiper.on("slideChange", function(){
             setIsBeginning(swiper.isBeginning)
-        })
+        });
     },[]);
 
     return(
