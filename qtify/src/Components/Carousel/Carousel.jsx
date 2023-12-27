@@ -26,9 +26,10 @@ const Controls = ({data}) => {
      slidesPerView={"auto"}
      allowTouchMove
      >
-        {/* <Controls data={data} /> */}
-        <CarouselLeftNavigation />
+        <Controls data={data} />
         <CarouselRightNavigation />
+        <CarouselLeftNavigation />
+        
 
         {data.map((ele)=> (
             <SwiperSlide>{renderComponent(ele)}</SwiperSlide>
