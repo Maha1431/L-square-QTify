@@ -12,7 +12,7 @@ const Controls = ({data}) => {
 
     useEffect(() => {
       if(data && swiper && swiper.slideTo)
-        swiper.slideTo(0, 1);
+        swiper.slideTo(0);
 
     }, [data,swiper]);
     return null;
