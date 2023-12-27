@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 
 function Card({ data, type }) {
 
-  let getCard = (type) => {
-    console.log(data);
-    console.log(type);
+  const getCard = (type) => {
+    // console.log(data);
+    // console.log(type);
     switch (type) {
       case "album": {
         const { image, title, follows, songs, slug } = data;
@@ -36,7 +36,7 @@ function Card({ data, type }) {
        
       }
       case "songs": {
-        const { image, likes, title } = data;
+        const { likes, image, title } = data;
         return (
           <div className="{styles.wrapper}">
             <div className={styles.card}>

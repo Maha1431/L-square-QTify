@@ -23,9 +23,10 @@ const Controls = ({data}) => {
      initialSlide={0}
      modules={[ Navigation ]}
      spaceBetween={40}
+     slidesPerView={"auto"}
      allowTouchMove
      >
-        <Controls  />
+        {/* <Controls data={data} /> */}
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
 
