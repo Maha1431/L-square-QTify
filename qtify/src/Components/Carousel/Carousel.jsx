@@ -11,13 +11,14 @@ const Controls = ({data}) => {
     const swiper  = useSwiper();
 
     useEffect(() => {
-        swiper.slideTo(0);
+      if(data && swiper && swiper.slideTo)
+        swiper.slideTo(0, 1);
 
-    }, [data]);
+    }, [data,swiper]);
     return null;
 }
 
-export default function Carousel({data, renderComponent})
+ function Carousel({data, renderComponent})
 {
   return(
     <div className={styles.wrapper}>
@@ -30,15 +31,16 @@ export default function Carousel({data, renderComponent})
      allowTouchMove
      >
         <Controls data={data} />
-        <CarouselRightNavigation />
         <CarouselLeftNavigation />
+        <CarouselRightNavigation />
+       
 
-        {data.map((ele)=> (
-            <SwiperSlide >{renderComponent(ele)}</SwiperSlide>
+        {data.map((ele, idx)=> (
+            <SwiperSlide key={idx} >{renderComponent(ele)}</SwiperSlide>
         ))}
      </Swiper>
     </div>
   );
 }
 
-// export default Carousel;
+export default Carousel;

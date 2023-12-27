@@ -38,3 +38,15 @@ export const fetchSongs = async() =>
         console.log(e);
     }
 }
+
+export const fetchFilters = async() => 
+{
+   try{
+  const request = await axios.get(`${Endpoint}/genres`);
+  return request.data
+    }
+    catch(e)
+    {
+        console.log(e);
+    }
+}
