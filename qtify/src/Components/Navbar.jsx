@@ -8,12 +8,16 @@ import {Link } from "react-router-dom"
 
 function Navbar()
 {
+    const onSubmit= (e)=>{
+        e.preventDefault();
+    }
     return(
         <nav className={styles.container}>
         <Link to={"/"}>
          <img src={logo} alt='Qtify-logo' className={styles.logo} />
          </Link>
-         <form className={styles.form}>
+         
+         <form className={styles.form} onSubmit={onSubmit}>
          <input type='text' placeholder='Search a song of your choice' className={styles.text} />
          <button className={styles.icon} type='submit'><SearchIcon /></button>
          </form>
