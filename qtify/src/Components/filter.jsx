@@ -48,7 +48,7 @@ return(
         aria-label='basic tabs example'
         TabIndicatorProps={{
             style:{
-                backgroundColor: "var(--color-priimary)"
+                backgroundColor: "var(--color-primary)"
             },
         }}
         >
