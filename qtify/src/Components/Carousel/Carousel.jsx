@@ -14,7 +14,7 @@ const Controls = ({data}) => {
       if(data && swiper && swiper.slideTo)
         swiper.slideTo(0);
 
-    }, [data,swiper]);
+    }, [data]);
     return null;
 }
 
@@ -35,8 +35,8 @@ const Controls = ({data}) => {
         <CarouselRightNavigation />
        
 
-        {data.map((ele, idx)=> (
-            <SwiperSlide key={idx} >{renderComponent(ele)}</SwiperSlide>
+        {data.map((ele)=> (
+            <SwiperSlide >{renderComponent(ele)}</SwiperSlide>
         ))}
      </Swiper>
     </div>
