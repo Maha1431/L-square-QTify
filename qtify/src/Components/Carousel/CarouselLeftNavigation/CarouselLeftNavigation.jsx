@@ -7,17 +7,17 @@ import { ReactComponent as LeftArrow } from "../../../assets/leftArrow.svg";
 function CarouselLeftNavigation()
 {
     const swiper = useSwiper();
-    const [isBegining, setIsBegining] = useState(swiper.isBeginning)
+    const [isBeginning, setIsBeginning] = useState(swiper.isBeginning)
 
     useEffect(() => {
         swiper.on("slideChange", function(){
-            setIsBegining(swiper.isBeginning)
+            setIsBeginning(swiper.isBeginning)
         })
     },[]);
 
     return(
         <div className={styles.leftNavigation}>
-         {!isBegining &&  <LeftArrow onClick={() => swiper.slidePrev()} />}
+         {!isBeginning &&  <LeftArrow onClick={() => swiper.slidePrev()} />}
         </div>
     )
 }
