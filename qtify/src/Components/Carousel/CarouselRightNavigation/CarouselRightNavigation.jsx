@@ -13,7 +13,7 @@ function CarouselRightNavigation()
         swiper.on("slideChange", function(){
             setIsEnding(swiper.isEnding)
         })
-    },[swiper]);
+    },[]);
 
     return(
         <div className={styles.rightNavigation}>

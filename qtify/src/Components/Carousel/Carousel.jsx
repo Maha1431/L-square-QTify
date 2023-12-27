@@ -11,11 +11,9 @@ const Controls = ({data}) => {
     const swiper  = useSwiper();
 
     useEffect(() => {
-      if(data && swiper && swiper.slideTo)
         swiper.slideTo(0);
-
     }, [data]);
-    return null;
+    return <></>;
 }
 
  function Carousel({data, renderComponent})
@@ -23,7 +21,7 @@ const Controls = ({data}) => {
   return(
     <div className={styles.wrapper}>
      <Swiper
-     style={{ padding: "0px, 20px"}}
+     style={{ padding: "0px 20px"}}
      initialSlide={0}
      modules={{ Navigation }}
      slidesPerView={"auto"}
@@ -33,7 +31,6 @@ const Controls = ({data}) => {
         <Controls data={data} />
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
-       
 
         {data.map((ele)=> (
             <SwiperSlide >{renderComponent(ele)}</SwiperSlide>
