@@ -9,7 +9,6 @@ import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavi
 
 const Controls = ({data}) => {
     const swiper  = useSwiper();
-
     useEffect(() => {
         swiper.slideTo(0);
     }, [data]);
@@ -23,8 +22,8 @@ const Controls = ({data}) => {
      <Swiper
      style={{ padding: "0px 20px"}}
      initialSlide={0}
-     modules={{ Navigation }}
-     slidesPerView={"auto"}
+     modules={[ Navigation ]}
+    //  slidesPerView={"auto"}
      spaceBetween={40}
      allowTouchMove
      >
